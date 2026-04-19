@@ -1,180 +1,377 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Kenzey Remit Plus | Fast, Secure Global Transfers</title>
-  <!-- Google Fonts + modern font stack -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
-  <!-- Font Awesome 6 (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="style.css">
- 
-</head>
-<body>
-
-<!-- Header / Navigation -->
-<div class="navbar">
-  <div class="nav-container">
-    <div class="logo">
-      <h1>Kenzey<span>Remit+</span></h1>
-    </div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Send</a>
-      <a href="#">Rates</a>
-      <a href="#">Track</a>
-      <a href="#">Support</a>
-      <a href="#" class="btn-primary" style="padding: 8px 20px;">Send now <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </div>
-</div>
-
-<!-- Hero section with dynamic rate preview -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-content">
-      <div class="hero-badge"><i class="fas fa-shield-alt"></i> Trusted by 50,000+ customers</div>
-      <h2>Fast, secure money transfers <br>to 150+ countries</h2>
-      <p>Zero hidden fees · Real exchange rates · Instant delivery to bank accounts, mobile wallets, and cash pickup.</p>
-      <div class="hero-buttons">
-        <a href="#" class="btn-accent"><i class="fas fa-paper-plane"></i> Start sending</a>
-        <a href="#" class="btn-secondary"><i class="fas fa-chart-line"></i> Live rates</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item"><h4>$2.5B+</h4><span>Annual volume</span></div>
-        <div class="stat-item"><h4>3 min</h4><span>Avg transfer speed</span></div>
-        <div class="stat-item"><h4>99.9%</h4><span>Satisfaction rate</span></div>
-      </div>
-    </div>
-    <div class="hero-graphic">
-      <div class="rate-card">
-        <h3><i class="fas fa-exchange-alt"></i> Live rate calculator</h3>
-        <div class="input-group">
-          <input type="number" id="sendAmount" class="input-field" placeholder="You send" value="500">
-          <select id="fromCurrency" class="input-field" style="width: auto; flex:0.5">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-          </select>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Kenzey Remit Plus — Fast, secure, and affordable international money transfers to 150+ countries. Best exchange rates, zero hidden fees."
+    />
+    <title>Kenzey Remit Plus | Global Money Transfers</title>
+    <!-- Google Fonts + modern font stack -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 6 (free) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <div class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>Kenzey<span>Remit+</span></h1>
         </div>
-        <div class="input-group">
-          <input type="text" id="receiveAmount" class="input-field" placeholder="They receive" readonly style="background:#f1f5f9">
-          <select id="toCurrency" class="input-field" style="width: auto; flex:0.5">
-            <option value="NGN">NGN (Naira)</option>
-            <option value="KES">KES (Shilling)</option>
-            <option value="GHS">GHS (Cedi)</option>
-          </select>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Send</a>
+          <a href="#">Rates</a>
+          <a href="#">Track</a>
+          <a href="#">Support</a>
+          <a href="#" class="btn-primary nav-cta"
+            >Send now <i class="fas fa-arrow-right"></i
+          ></a>
         </div>
-        <div class="live-rate" id="liveRateDisplay">
-          <i class="fas fa-info-circle"></i> 1 USD = 1,520.00 NGN • No fees
-        </div>
-        <a href="#" class="btn-primary" style="margin-top: 18px; width: 100%; justify-content: center;">Get this rate <i class="fas fa-lock"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Features refined -->
-<section class="features-section">
-  <div class="container">
-    <div class="section-title">Why choose Kenzey Remit Plus</div>
-    <div class="section-sub">Global transfers designed for speed, transparency, and peace of mind.</div>
-    <div class="features-grid">
-      <div class="feature-card"><div class="feature-icon">⚡</div><h3>Lightning transfers</h3><p>Most transfers complete within minutes, 24/7.</p></div>
-      <div class="feature-card"><div class="feature-icon">🔒</div><h3>Bank-grade security</h3><p>Encrypted & fully regulated. Your money is protected.</p></div>
-      <div class="feature-card"><div class="feature-icon">💱</div><h3>Mid-market rates</h3><p>No markup, just the real exchange rate + low fee.</p></div>
-      <div class="feature-card"><div class="feature-icon">🌍</div><h3>Global network</h3><p>150+ countries, 70+ currencies, multiple payout methods.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Steps reimagined -->
-<section class="steps-section">
-  <div class="container">
-    <div class="section-title">Send money in 3 simple steps</div>
-    <div class="section-sub">Fast, intuitive, and fully digital experience</div>
-    <div class="steps-container">
-      <div class="step-item"><div class="step-number">1</div><h3>Create account</h3><p>Sign up in 60 seconds with email or phone.</p></div>
-      <div class="step-item"><div class="step-number">2</div><h3>Enter transfer</h3><p>Add recipient and amount — we'll show you the exact cost.</p></div>
-      <div class="step-item"><div class="step-number">3</div><h3>Send & track</h3><p>Pay via card or bank transfer. Instant notifications.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- dynamic rates + trust CTA -->
-<div class="container">
-  <div class="trust-banner">
-    <div class="testimonial">
-      <i class="fas fa-quote-left" style="font-size: 2rem; opacity: 0.6; margin-right: 8px;"></i> 
-      Kenzey helped me send money to my family in Lagos instantly with the best rate. No hidden fees, and the app is super smooth.
-      <div style="margin-top: 24px; font-weight: 600;">— Amara O., verified customer</div>
-    </div>
-  </div>
-</div>
-
-<!-- Advanced rates + calculator (upgraded section) -->
-<section style="background: white; padding: 60px 0;">
-  <div class="container">
-    <div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
-      <div style="flex:1">
-        <span style="background:#e6f7f0; color:#007a4d; padding: 4px 12px; border-radius: 40px; font-weight:600;">Smart rate alert</span>
-        <h2 style="font-size: 2rem; margin: 20px 0 12px;">Transparent fees,<br>real exchange rates</h2>
-        <p>Get the most competitive conversion with our price guarantee. What you see is exactly what your recipient gets.</p>
-        <ul style="margin-top: 24px; list-style: none;">
-          <li style="margin-bottom: 12px;"><i class="fas fa-check-circle" style="color:#00b67a;"></i> No monthly fees</li>
-          <li style="margin-bottom: 12px;"><i class="fas fa-check-circle" style="color:#00b67a;"></i> Flat transfer fee from $0.99</li>
-          <li><i class="fas fa-check-circle" style="color:#00b67a;"></i> 24/7 live support + tracking</li>
-        </ul>
-      </div>
-      <div style="flex:1; background: #f8fafc; border-radius: 32px; padding: 32px;">
-        <h3 style="margin-bottom: 16px;">Compare our rate</h3>
-        <div id="compareDisplay" style="background:white; border-radius: 24px; padding: 20px;">
-          <div style="display: flex; justify-content: space-between;"><span>Bank rate</span><span><strong>1 USD = 1,480 NGN</strong></span></div>
-          <div style="display: flex; justify-content: space-between; margin: 12px 0;"><span>Kenzey rate</span><span><strong style="color:#00b67a;">1 USD = 1,520 NGN</strong></span></div>
-          <div style="border-top: 1px dashed #ccc; margin: 16px 0; padding-top: 12px;">You save <strong>₦2,000</strong> on $100 transfer</div>
-          <a href="#" class="btn-accent" style="width: 100%; justify-content: center;">Start saving now</a>
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- final CTA banner -->
-<section class="cta-footer">
-  <div class="container">
-    <h2 style="font-size: 2rem; font-weight: 700;">Ready to send money globally?</h2>
-    <p style="margin: 16px auto 32px; max-width: 500px;">Join thousands who trust Kenzey Remit Plus for fast, fair, and secure transfers.</p>
-    <a href="#" class="btn-accent"><i class="fas fa-user-plus"></i> Create free account</a>
-    <p style="margin-top: 32px; font-size: 0.8rem;">No sign-up fees · 2-minute verification</p>
-  </div>
-</section>
-
-<!-- footer -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-col">
-      <h3 style="color:white;">Kenzey Remit Plus</h3>
-      <p>Fast, borderless payments for everyone.</p>
-      <div class="social-icons" style="margin-top: 16px;">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#">Home</a>
+        <a href="#">Send</a>
+        <a href="#">Rates</a>
+        <a href="#">Track</a>
+        <a href="#">Support</a>
+        <a href="#" class="btn-primary" style="color: #e6f7f0;">Send now</a>
       </div>
     </div>
-    <div><h4 style="color:white;">Company</h4><p>About us<br>Careers<br>Press</p></div>
-    <div><h4 style="color:white;">Resources</h4><p>Help center<br>Fees & pricing<br>Security</p></div>
-    <div><h4 style="color:white;">Legal</h4><p>Privacy policy<br>Terms of service<br>Licenses</p></div>
-  </div>
-  <div style="text-align: center; margin-top: 48px; font-size: 0.75rem; border-top: 1px solid #1e3a5f; padding-top: 28px;">
-    © 2026 Kenzey Exchange | Kenzey Remit Plus — All rights reserved.
-  </div>
-</footer>
 
-<!-- Interactive rate conversion logic (realistic exchange simulation) -->
-<script src="script.js"></script>
-</body>
+    <!-- Hero section with dynamic rate calculator + background image -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-globe-americas"></i> Trusted by 50,000+ customers
+          </div>
+          <h2>
+            Send money abroad <br /><span class="gradient-text"
+              >instantly & securely</span
+            >
+          </h2>
+          <p>
+            Zero hidden fees · Real exchange rates · Fast transfers to 150+
+            countries, including bank deposits, mobile wallets, and cash pickup.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn-accent"
+              ><i class="fas fa-paper-plane"></i> Start sending</a
+            >
+            <a href="#" class="btn-secondary"
+              ><i class="fas fa-chart-line"></i> Live rates</a
+            >
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>$2.5B+</h4>
+              <span>Annual volume</span>
+            </div>
+            <div class="stat-item">
+              <h4>3 min</h4>
+              <span>Avg transfer speed</span>
+            </div>
+            <div class="stat-item">
+              <h4>99.9%</h4>
+              <span>Satisfaction rate</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <div class="rate-card">
+            <h3><i class="fas fa-exchange-alt"></i> Live rate calculator</h3>
+            <div class="input-group">
+              <input
+                type="number"
+                id="sendAmount"
+                class="input-field"
+                placeholder="You send"
+                value="500"
+              />
+              <select id="fromCurrency" class="input-field currency-select">
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                id="receiveAmount"
+                class="input-field"
+                placeholder="They receive"
+                readonly
+              />
+              <select id="toCurrency" class="input-field currency-select">
+                <option value="NGN">NGN - Nigerian Naira</option>
+                <option value="KES">KES - Kenyan Shilling</option>
+                <option value="GHS">GHS - Ghanaian Cedi</option>
+              </select>
+            </div>
+            <div class="live-rate" id="liveRateDisplay">
+              <i class="fas fa-chart-simple"></i> 1 USD = 1,520.00 NGN • No
+              hidden fees
+            </div>
+            <a href="#" class="btn-primary rate-cta"
+              >Lock this rate <i class="fas fa-lock"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features refined -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-title">Why choose Kenzey Remit Plus</div>
+        <div class="section-sub">
+          Global transfers designed for speed, transparency, and peace of mind.
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Lightning transfers</h3>
+            <p>
+              Most transfers complete within minutes, 24/7, even on weekends.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Bank-grade security</h3>
+            <p>Encrypted & fully regulated. Your money is always protected.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💱</div>
+            <h3>Mid-market rates</h3>
+            <p>No markup, just the real exchange rate + low transparent fee.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3>Global network</h3>
+            <p>150+ countries, 70+ currencies, multiple payout methods.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps reimagined -->
+    <section class="steps-section">
+      <div class="container">
+        <div class="section-title">Send money in 3 simple steps</div>
+        <div class="section-sub">
+          Fast, intuitive, and fully digital experience
+        </div>
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <h3>Create account</h3>
+            <p>Sign up in 60 seconds with email or phone.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <h3>Enter transfer</h3>
+            <p>Add recipient and amount — we'll show you the exact cost.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <h3>Send & track</h3>
+            <p>Pay via card or bank transfer. Instant notifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- dynamic rates + trust CTA with background image -->
+    <div class="container">
+      <div class="trust-banner">
+        <div class="testimonial">
+          <i
+            class="fas fa-quote-left"
+            style="font-size: 2rem; opacity: 0.7; margin-right: 8px"
+          ></i>
+          Kenzey helped me send money to my family in Lagos instantly with the
+          best rate. No hidden fees, and the app is super smooth.
+          <div style="margin-top: 24px; font-weight: 600">
+            — Amara O., verified customer
+          </div>
+          <div style="margin-top: 16px">
+            <i class="fas fa-star" style="color: #ffd966"></i
+            ><i class="fas fa-star" style="color: #ffd966"></i
+            ><i class="fas fa-star" style="color: #ffd966"></i
+            ><i class="fas fa-star" style="color: #ffd966"></i
+            ><i class="fas fa-star" style="color: #ffd966"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advanced rates + calculator (upgraded section) -->
+    <section style="background: white; padding: 70px 0">
+      <div class="container">
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center"
+        >
+          <div style="flex: 1">
+            <span
+              style="
+                background: #e6f7f0;
+                color: #007a4d;
+                padding: 4px 12px;
+                border-radius: 40px;
+                font-weight: 600;
+              "
+              ><i class="fas fa-bell"></i> Smart rate alert</span
+            >
+            <h2
+              style="font-size: 2.2rem; margin: 20px 0 12px; font-weight: 700"
+            >
+              Transparent fees,<br />real exchange rates
+            </h2>
+            <p>
+              Get the most competitive conversion with our price guarantee. What
+              you see is exactly what your recipient gets.
+            </p>
+            <ul style="margin-top: 24px; list-style: none">
+              <li style="margin-bottom: 14px">
+                <i class="fas fa-check-circle" style="color: #00b67a"></i> No
+                monthly fees or subscriptions
+              </li>
+              <li style="margin-bottom: 14px">
+                <i class="fas fa-check-circle" style="color: #00b67a"></i> Flat
+                transfer fee from $0.99
+              </li>
+              <li>
+                <i class="fas fa-check-circle" style="color: #00b67a"></i> 24/7
+                live support + real-time tracking
+              </li>
+            </ul>
+          </div>
+          <div
+            style="
+              flex: 1;
+              background: #f8fafc;
+              border-radius: 32px;
+              padding: 32px;
+              box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+            "
+          >
+            <h3 style="margin-bottom: 16px">Compare our rate</h3>
+            <div
+              id="compareDisplay"
+              style="background: white; border-radius: 24px; padding: 24px"
+            >
+              <div style="display: flex; justify-content: space-between">
+                <span>🏦 Traditional bank</span
+                ><span><strong>1 USD = 1,480 NGN</strong></span>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 14px 0;
+                "
+              >
+                <span>🚀 Kenzey rate</span
+                ><span
+                  ><strong style="color: #00b67a; font-size: 1.2rem"
+                    >1 USD = 1,520 NGN</strong
+                  ></span
+                >
+              </div>
+              <div
+                style="
+                  border-top: 1px dashed #e2e8f0;
+                  margin: 16px 0;
+                  padding-top: 14px;
+                  background: #f0fdf4;
+                  border-radius: 16px;
+                  padding: 12px;
+                  text-align: center;
+                "
+              >
+                You save <strong>₦2,000</strong> on every $100 transfer
+              </div>
+              <a
+                href="#"
+                class="btn-accent"
+                style="width: 100%; justify-content: center; margin-top: 10px"
+                >Start saving now <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- final CTA banner -->
+    <section class="cta-footer">
+      <div class="container">
+        <h2 style="font-size: 2.2rem; font-weight: 800">
+          Ready to send money globally?
+        </h2>
+        <p style="margin: 16px auto 32px; max-width: 550px">
+          Join thousands who trust Kenzey Remit Plus for fast, fair, and secure
+          transfers.
+        </p>
+        <a href="#" class="btn-accent cta-large"
+          ><i class="fas fa-user-plus"></i> Create free account</a
+        >
+        <p style="margin-top: 32px; font-size: 0.85rem; color: #475569">
+          No sign-up fees · 2-minute verification · Cancel anytime
+        </p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 style="color: white; font-size: 1.4rem">Kenzey Remit Plus</h3>
+          <p>Fast, borderless payments for everyone.</p>
+          <div class="social-icons" style="margin-top: 20px">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About us</a><a href="#">Careers</a><a href="#">Press</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="#">Help center</a><a href="#">Fees & pricing</a
+          ><a href="#">Security</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy policy</a><a href="#">Terms of service</a
+          ><a href="#">Licenses</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Kenzey Exchange | Kenzey Remit Plus — All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-```
